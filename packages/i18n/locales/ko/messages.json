@@ -1,11 +1,11 @@
 {
   "extensionDescription": {
     "description": "Extension description",
-    "message": "React, Typescript, Vite를 사용한 크롬 익스텐션 보일러플레이트입니다."
+    "message": "GitHub Stars 페이지에서 리스트 라벨을 Starred 버튼 옆에 표시합니다."
   },
   "extensionName": {
     "description": "Extension name",
-    "message": "크롬 익스텐션 보일러플레이트"
+    "message": "GitHub Starlist Extension"
   },
   "toggleTheme": {
     "message": "테마 변경"
