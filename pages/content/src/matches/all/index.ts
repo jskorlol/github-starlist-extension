@@ -1,5 +1,5 @@
-import { sampleFunction } from '@src/sample-function';
+import { initStarListBadges } from '@src/starlist';
 
 console.log('[CEB] All content script loaded');
 
-void sampleFunction();
+initStarListBadges();

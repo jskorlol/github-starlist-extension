@@ -1,0 +1,64 @@
+.gh-starlist-badge {
+  align-items: center;
+  align-self: center;
+  display: inline-flex;
+  gap: 4px;
+  margin-right: 6px;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.gh-starlist-badge--label {
+  align-items: center;
+  background: #1f2937;
+  border: 1px solid rgba(110, 118, 129, 0.4);
+  border-radius: 999px;
+  color: #f0f6fc;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 600;
+  height: 20px;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  padding: 0 8px;
+}
+
+.gh-starlist-badge--loading {
+  align-items: center;
+  background: #161b22;
+  border: 1px solid rgba(110, 118, 129, 0.4);
+  border-radius: 999px;
+  display: inline-flex;
+  height: 20px;
+  justify-content: center;
+  min-width: 28px;
+}
+
+.gh-starlist-badge--loading::before,
+.gh-starlist-badge--loading::after {
+  animation: gh-starlist-pulse 1.2s ease-in-out infinite;
+  background: #8b949e;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  margin: 0 2px;
+  width: 4px;
+}
+
+.gh-starlist-badge--loading::after {
+  animation-delay: 0.2s;
+}
+
+@keyframes gh-starlist-pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}

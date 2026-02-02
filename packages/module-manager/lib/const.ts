@@ -10,7 +10,6 @@ export const DEFAULT_CHOICES = [
   { name: 'New Tab Override', value: 'new-tab' },
   { name: 'Popup (On Extension Icon Click)', value: 'popup' },
   { name: 'DevTools (Include DevTools Panel)', value: 'devtools' },
-  { name: 'Side Panel', value: 'side-panel' },
   { name: 'Options Page', value: 'options' },
   { name: 'All tests', value: 'tests' },
 ] as const;
@@ -20,7 +19,7 @@ export const DEFAULT_CHOICES_VALUES = DEFAULT_CHOICES.map(item => item.value);
 export const HELP_EXAMPLES = [
   ['-d content-ui content-runtime', 'Delete content-ui and content-runtime'],
   ['--de content devtools', 'Delete everything exclude content and devtools'],
-  ['-r options side-panel', 'Recover options and side-panel'],
+  ['-r options', 'Recover options'],
   ['--re popup new-tab', 'Recover everything exclude popup and new-tab'],
 ] as const;
 
@@ -52,18 +51,6 @@ export const MODULE_CONFIG = {
       },
     ],
   },
-  'content-ui': {
-    content_scripts: [
-      {
-        matches: ['http://*/*', 'https://*/*', '<all_urls>'],
-        js: ['content-ui/all.iife.js'],
-      },
-      {
-        matches: ['https://example.com/*'],
-        js: ['content-ui/example.iife.js'],
-      },
-    ],
-  },
   background: {
     background: {
       service_worker: 'background.js',
@@ -83,12 +70,6 @@ export const MODULE_CONFIG = {
   },
   devtools: {
     devtools_page: 'devtools/index.html',
-  },
-  'side-panel': {
-    side_panel: {
-      default_path: 'side-panel/index.html',
-    },
-    permissions: ['sidePanel'],
   },
   options: {
     options_page: 'options/index.html',
