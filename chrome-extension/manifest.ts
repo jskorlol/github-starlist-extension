@@ -31,7 +31,7 @@ const manifest = {
   version: packageJson.version,
   description: 'Shows GitHub Stars list labels next to the Starred button',
   host_permissions: ['*://github.com/*'],
-  permissions: ['tabs', 'storage'],
+  permissions: [],
   action: {
     default_popup: 'popup/index.html',
     default_icon: 'icon-34.png',
