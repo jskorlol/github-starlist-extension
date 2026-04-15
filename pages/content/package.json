@@ -31,6 +31,6 @@
     "@extension/tsconfig": "workspace:*",
     "@extension/vite-config": "workspace:*",
     "@types/jsdom": "^21.1.7",
-    "jsdom": "^26.1.0"
+    "jsdom": "^29.0.2"
   }
 }
