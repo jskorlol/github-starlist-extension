@@ -34,13 +34,13 @@ export type StorageConfigType<D = string> = {
    */
   serialization?: {
     /**
-     * convert non-native values to string to be saved in storage
+     * convert a value to a storage-safe representation
      */
-    serialize: (value: D) => string;
+    serialize: (value: D) => unknown;
     /**
-     * convert string value from storage to non-native values
+     * convert the raw storage value to the target type
      */
-    deserialize: (text: string) => D;
+    deserialize: (value: unknown) => D;
   };
 };
 
