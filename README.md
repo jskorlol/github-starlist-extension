@@ -1,9 +1,10 @@
-# GitHub Starlist Extension
+# Starlist for Git Repositories
 
-![GitHub Starlist Extension](/assets/img.png)
+![Starlist for Git Repositories](/assets/img.png)
 
-GitHub Stars 페이지에서 각 리포지토리가 어떤 리스트에 포함되어 있는지
-`Starred` 버튼 왼쪽에 라벨로 표시해주는 크롬 확장 프로그램입니다.
+GitHub를 이용하면서 스타리스트를 쉽게 볼 수 있도록, Stars 페이지에서 각 리포지토리가
+어떤 리스트에 포함되어 있는지 `Starred` 버튼 왼쪽에 라벨로 표시해주는 크롬 확장
+프로그램입니다.
 
 ## 핵심 기능
 
@@ -39,4 +40,3 @@ Chrome에서 `chrome://extensions` → 개발자 모드 활성화 → `dist` 폴
 
 - GitHub의 DOM/HTML 구조 변경 시 파싱 로직이 깨질 수 있습니다.
 - 리스트 표시 여부는 `/lists` 응답의 `checked` 체크박스를 기준으로 판단합니다.
-

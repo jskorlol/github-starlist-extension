@@ -21,7 +21,7 @@ const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 const manifest = {
   manifest_version: 3,
   default_locale: 'en',
-  name: 'GitHub Starlist Extension',
+  name: 'Starlist for Git Repositories',
   browser_specific_settings: {
     gecko: {
       id: '7d2b2f2e-7b9d-4d13-9a22-5c4a9c8b9a1f',
@@ -29,7 +29,7 @@ const manifest = {
     },
   },
   version: packageJson.version,
-  description: 'Shows GitHub Stars list labels next to the Starred button',
+  description: 'Easily view starlist labels while using GitHub.',
   permissions: [],
   action: {
     default_popup: 'popup/index.html',

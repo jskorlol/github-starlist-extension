@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Starlist for Git Repositories icon">
+  <defs>
+    <linearGradient id="bg" x1="144" y1="116" x2="880" y2="908" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#263442"/>
+      <stop offset="0.52" stop-color="#17212C"/>
+      <stop offset="1" stop-color="#0E151D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(420 0 0 420 690 238)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42E8C9" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="#42E8C9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="star" x1="170" y1="286" x2="452" y2="716" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE48A"/>
+      <stop offset="0.42" stop-color="#F7BC3D"/>
+      <stop offset="1" stop-color="#D98B17"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="430" y1="222" x2="774" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFCF2"/>
+      <stop offset="1" stop-color="#EDE8DC"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#02070C" flood-opacity="0.42"/>
+    </filter>
+    <filter id="starShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#02070C" flood-opacity="0.38"/>
+    </filter>
+  </defs>
+
+  <rect x="64" y="64" width="896" height="896" rx="220" fill="url(#bg)"/>
+  <rect x="64" y="64" width="896" height="896" rx="220" fill="url(#glow)"/>
+  <rect x="92" y="92" width="840" height="840" rx="198" fill="none" stroke="#3A4B5A" stroke-width="18" opacity="0.7"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="370" y="210" width="464" height="596" rx="86" fill="#0A1017" opacity="0.28"/>
+    <rect x="398" y="190" width="464" height="596" rx="86" fill="url(#paper)"/>
+    <rect x="438" y="256" width="384" height="62" rx="31" fill="#DCD6C8"/>
+    <rect x="486" y="124" width="82" height="166" rx="32" fill="#101923"/>
+    <rect x="654" y="124" width="82" height="166" rx="32" fill="#101923"/>
+    <rect x="506" y="148" width="42" height="96" rx="18" fill="#EDE8DC"/>
+    <rect x="674" y="148" width="42" height="96" rx="18" fill="#EDE8DC"/>
+  </g>
+
+  <g filter="url(#starShadow)">
+    <polygon points="300,295 359,439 514,450 395,551 432,702 300,620 168,702 205,551 86,450 241,439" fill="url(#star)" stroke="#FFF1B8" stroke-width="18" stroke-linejoin="round"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M502 420l42 42 90-96" stroke="#1FAF91" stroke-width="44"/>
+    <path d="M682 418h104" stroke="#23303D" stroke-width="42"/>
+    <path d="M502 548l42 42 90-96" stroke="#1FAF91" stroke-width="44"/>
+    <path d="M682 546h104" stroke="#23303D" stroke-width="42"/>
+    <path d="M502 676l42 42 90-96" stroke="#1FAF91" stroke-width="44"/>
+    <path d="M682 674h104" stroke="#23303D" stroke-width="42"/>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 {
-  "name": "github-starlist-extension",
+  "name": "starlist-for-git-repositories",
   "version": "1.0.2",
-  "description": "Chrome extension that shows GitHub Stars list labels on the Stars page",
+  "description": "Extension for easily viewing starlist labels while using GitHub.",
   "type": "module",
   "private": true,
   "sideEffects": false,
